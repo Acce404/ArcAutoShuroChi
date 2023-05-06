@@ -178,3 +178,11 @@ function arcwell()
   Sleep(500)
 end
 
+function run(t)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(t)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
