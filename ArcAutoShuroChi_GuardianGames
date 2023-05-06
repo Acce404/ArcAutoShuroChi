@@ -179,10 +179,10 @@ function arcwell()
 end
 
 function run(t)
-	PressKey("w")
-	Sleep(10)
-	PressKey("lshift")
-	Sleep(t)
-	ReleaseKey("w")
-	ReleaseKey("lshift")
+  PressKey("w")
+  Sleep(10)
+  PressKey("lshift")
+  Sleep(t)
+  ReleaseKey("w")
+  ReleaseKey("lshift")
 end
