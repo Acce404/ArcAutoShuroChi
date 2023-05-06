@@ -1,0 +1,180 @@
+function OnEvent(event, arg)
+  if (event == "MOUSE_BUTTON_RELEASED" and arg == 6) then
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+
+		end
+    fullauto()
+	end
+end
+
+function fullauto()
+  while (IsKeyLockOn("capslock")) do
+    SChiArcWlk(8)
+    turnInBont()
+    tower()
+  end
+end
+
+function turnInBont()
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("A")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(11,-7)
+    Sleep(10)
+  end
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  PressAndReleaseKey("M")
+  Sleep(500)
+end
+
+function tower()
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("D")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(0,9)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(-1,-10)
+    Sleep(10)
+  end
+  MoveMouseRelative(-5,-7)
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(15,9)
+    Sleep(10)
+  end
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(60000)
+  --in tower
+  run(5200)
+  Sleep(500)
+  PressKey("E")
+  Sleep(1500)
+  ReleaseKey("E")
+  Sleep(2000)
+  PressKey("S")
+  Sleep(3300)
+  ReleaseKey("S")
+  PressKey("A")
+  Sleep(1200)
+  ReleaseKey("A")
+  Sleep(500)
+  PressKey("E")
+  Sleep(1000)
+  ReleaseKey("E")
+  Sleep(1500)
+  for i=0,10,1 do
+    MoveMouseRelative(6,8)
+    Sleep(10)
+  end
+  Sleep(2000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  PressAndReleaseKey("M")
+  Sleep(500)
+  PressAndReleaseKey("D")
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(11,-9)
+    Sleep(10)
+  end
+  Sleep(1000)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+  for i=0,10,1 do
+    MoveMouseRelative(-19,-5)
+    Sleep(10)
+  end
+  Sleep(300)
+  for i=1,10,1 do
+    PressAndReleaseMouseButton(1)
+    Sleep(100)
+  end
+  for i=0,10,1 do
+    MoveMouseRelative(19,12)
+    Sleep(10)
+  end
+  MoveMouseRelative(0,12)
+  Sleep(500)
+  PressAndReleaseMouseButton(1)
+  PressAndReleaseMouseButton(1)
+  Sleep(60000)
+end
+
+function SChiArcWlk(t)
+  for i=1,t,1 do
+    Sleep(500)
+    PressAndReleaseKey("2")
+    Sleep(100)
+    PressAndReleaseKey("2")
+    for i=0,18,1 do
+      MoveMouseRelative(8,0)
+      Sleep(10)
+    end
+    run(7000)
+    Sleep(1000)
+    arcwell()
+    Sleep(500)
+    PressKey("D")
+    Sleep(500)
+    ReleaseKey("D")
+    run(1000)
+    Sleep(500)
+    for i=0,47,1 do
+      MoveMouseRelative(-10,0)
+      Sleep(10)
+    end
+    run(3500)
+    arcwell()
+    run(1000)
+    PressAndReleaseKey("Q")
+    Sleep(500)
+    PressAndReleaseKey("1")
+    Sleep(100)
+    PressAndReleaseKey("1")
+    Sleep(100)
+    for i=0,20,1 do
+      MoveMouseRelative(0,50)
+      Sleep(10)
+    end
+    Sleep(100)
+    PressMouseButton(1)
+    Sleep(8000)
+    ReleaseMouseButton(1)
+    Sleep(23000)
+  end
+end
+
+function arcwell()
+  PressAndReleaseKey("V")
+  Sleep(3000)
+  for i=0,20,1 do
+    MoveMouseRelative(0,50)
+    Sleep(10)
+  end
+  PressAndReleaseMouseButton(1)
+  Sleep(3000)
+  PressAndReleaseMouseButton(1)
+  Sleep(500)
+end
+
